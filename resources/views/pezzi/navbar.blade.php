@@ -4,8 +4,14 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Cards&Offers</a>
- 
+    <a class="navbar-brand" href="#">MyOffers</a>
+    @if( auth()->check() )
+
+                 <!--   <a class="nav-link font-weight-bold" href="#">Hi {{ auth()->user()->name }}</a>
+                    <a class="nav-link" href="/logout">Log Out</a>
+-->
+             @endif
+
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
       <li class="nav-item">

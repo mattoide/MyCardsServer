@@ -25,6 +25,8 @@ Route::get('/logout', 'SessionsController@destroy');
 
 Route::get('/addProduct', ['middleware' => 'auth', 'uses' => 'ProductsController@create']);
 Route::post('/addProduct', 'ProductsController@store');
+Route::post('/removeProduct', 'ProductsController@remove');
+
 
 //Route::get('/home', ['middleware' => 'auth','uses' => 'ProductsController@index']);
 Route::get('/home/my', ['middleware' => 'auth','uses' => 'ProductsController@indexMy']);
