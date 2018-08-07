@@ -33,7 +33,7 @@
     <input type="number" min="0" class="form-control"   id="price" name="price" placeholder="Prezzo prodotto (in €)" required >
 
      <label for="exampleFormControlTextarea1">Quantità</label>
-    <input type="number" min="0" class="form-control"   id="quantity" name="quantity" placeholder="Quantità" required >
+    <input type="number" min="0" class="form-control"   id="quantity" name="quantity" placeholder="Quantità" required > 
 </div>
 
     <div class="form-group">
