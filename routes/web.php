@@ -30,7 +30,7 @@ Route::post('/removeProduct', 'ProductsController@remove');
 
 //Route::get('/home', ['middleware' => 'auth','uses' => 'ProductsController@index']);
 Route::get('/home/my', ['middleware' => 'auth','uses' => 'ProductsController@indexMy']);
-Route::get('/home/all', 'ProductsController@indexAll');
+Route::get('/home/all', ['middleware' => 'auth','uses' => 'ProductsController@indexAll']);
 
 
 /*Route::get('/home', ['middleware' => 'auth', function () {
